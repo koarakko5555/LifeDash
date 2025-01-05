@@ -1,0 +1,25 @@
+<h1>ToDoを編集</h1>
+
+<%= form_with model: @todo, local: true do |form| %>
+  <p>
+    <%= form.label :title, "タスク名" %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :description, "詳細" %><br>
+    <%= form.text_area :description %>
+  </p>
+  <p>
+    <%= form.label :deadline, "締切日" %><br>
+    <%= form.date_select :deadline %>
+  </p>
+  <p>
+    <%= form.label :status, "完了" %>
+    <%= form.check_box :status %>
+  </p>
+  <p>
+    <%= form.submit "更新" %>
+  </p>
+<% end %>
+
+<%= link_to '戻る', todos_path %>

@@ -1,0 +1,25 @@
+<h1>新しいToDoを作成</h1>
+
+<%= form_with model: @todo, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+  </p>
+  <p>
+    <%= form.label :deadline %><br>
+    <%= form.date_select :deadline %>
+  </p>
+  <p>
+    <%= form.label :status, "完了" %>
+    <%= form.check_box :status %>
+  </p>
+  <p>
+    <%= form.submit "作成" %>
+  </p>
+<% end %>
+
+<%= link_to '戻る', todos_path %>

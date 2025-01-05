@@ -1,0 +1,24 @@
+<h1>ToDo 詳細</h1>
+
+<p>
+  <strong>タスク名:</strong>
+  <%= @todo.title %>
+</p>
+
+<p>
+  <strong>詳細:</strong>
+  <%= @todo.description %>
+</p>
+
+<p>
+  <strong>締切日:</strong>
+  <%= @todo.deadline %>
+</p>
+
+<p>
+  <strong>完了:</strong>
+  <%= @todo.status ? '完了' : '未完了' %>
+</p>
+
+<%= link_to '編集', edit_todo_path(@todo) %> |
+<%= link_to '戻る', todos_path %>

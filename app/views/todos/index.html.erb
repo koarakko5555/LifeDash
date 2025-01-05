@@ -1,0 +1,16 @@
+<h1>ToDo一覧</h1>
+
+<%= link_to '新しいToDoを作成', new_todo_path %>
+
+<ul>
+  <% @todos.each do |todo| %>
+    <li>
+      <strong><%= todo.title %></strong>
+      <p><%= todo.description %></p>
+      <p>締切日: <%= todo.deadline %></p>
+      <p>完了: <%= todo.status ? '完了' : '未完了' %></p>
+      <%= link_to '編集', edit_todo_path(todo) %> |
+      <%= button_to '削除', todo, method: :delete, data: { confirm: '本当に削除しますか？' } %>
+    </li>
+  <% end %>
+</ul>
