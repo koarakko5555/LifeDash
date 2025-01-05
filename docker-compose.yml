@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "3000:3000"  # ホストとコンテナ間のポート設定
+    volumes:
+      - .:/app       # ローカルのコードをコンテナ内にマウント
+    stdin_open: true # 対話的なターミナルの有効化
+    tty: true        # コンソール出力を保持

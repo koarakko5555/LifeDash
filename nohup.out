@@ -1,0 +1,56 @@
+=> Booting Puma
+=> Rails 7.0.8.4 application starting in development 
+=> Run `bin/rails server --help` for more startup options
+Puma starting in single mode...
+* Puma version: 5.6.9 (ruby 3.0.4-p208) ("Birdie's Version")
+*  Min threads: 5
+*  Max threads: 5
+*  Environment: development
+*          PID: 235407
+* Listening on http://127.0.0.1:3000
+* Listening on http://[::1]:3000
+Use Ctrl-C to stop
+Started GET "/" for 127.0.0.1 at 2024-11-04 16:52:56 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (Duration: 1.8ms | Allocations: 462)
+  Rendered shared/_flash.html.erb (Duration: 0.5ms | Allocations: 258)
+  Rendered shared/_navbar.html.erb (Duration: 2.2ms | Allocations: 812)
+  Rendered layout layouts/application.html.erb (Duration: 83.2ms | Allocations: 38131)
+Completed 200 OK in 105ms (Views: 89.0ms | ActiveRecord: 0.0ms | Allocations: 47602)
+
+
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2024-11-04 16:54:05 +0900 ===
+- Goodbye!
+Exiting
+=> Booting Puma
+=> Rails 7.0.8.4 application starting in development 
+=> Run `bin/rails server --help` for more startup options
+Puma starting in single mode...
+* Puma version: 5.6.9 (ruby 3.0.4-p208) ("Birdie's Version")
+*  Min threads: 5
+*  Max threads: 5
+*  Environment: development
+*          PID: 237238
+* Listening on http://127.0.0.1:3000
+* Listening on http://[::1]:3000
+Use Ctrl-C to stop
+Started GET "/" for 127.0.0.1 at 2024-11-04 16:55:28 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (Duration: 0.9ms | Allocations: 462)
+  Rendered shared/_flash.html.erb (Duration: 0.5ms | Allocations: 258)
+  Rendered shared/_navbar.html.erb (Duration: 2.9ms | Allocations: 812)
+  Rendered layout layouts/application.html.erb (Duration: 75.3ms | Allocations: 38022)
+Completed 200 OK in 91ms (Views: 78.1ms | ActiveRecord: 0.0ms | Allocations: 47493)
+
+
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2024-11-04 16:55:31 +0900 ===
+- Goodbye!
+Exiting
